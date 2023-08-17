@@ -1,71 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+    ></script>
     <title>Museum Mobile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 24px;
-        }
-
-        nav {
-            background-color: #555;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-
-        main {
-            padding: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Museum Mobile</h1>
+      <h1>Museum Mobile</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Exhibits</a>
-        <a href="#">Events</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">Exhibits</a>
+      <a href="#">Events</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
     <main>
-        <h2>Welcome to Museum Mobile</h2>
-        <p>Explore the fascinating world of mobile technology at Museum Mobile. From the first flip phones to the latest smartphones, our exhibits showcase the evolution of mobile devices.</p>
-        <p>Visit our museum to learn about the history of mobile communication, discover groundbreaking inventions, and see rare devices from around the world.</p>
+      <div
+        id="ngy2p"
+        data-nanogallery2='{
+            "itemsBaseURL": "/img/",
+            "thumbnailWidth": "200",
+            "thumbnailLabel": {
+              "position": "overImageOnBottom"
+            },
+            "thumbnailAlignment": "center",
+            "thumbnailOpenImage": true
+          }'
+      >
+        <a href="photo_2023-08-17_18-43-05.jpg" data-ngthumb="photo_2023-08-17_18-43-05.jpg" data-ngdesc=""
+          >Berlin 1</a
+        >
+        <a href="photo_2023-08-17_18-43-31.jpg" data-ngthumb="photo_2023-08-17_18-43-31.jpg" data-ngdesc=""
+          >Berlin 2</a
+        >
+        <a href="photo_2023-08-17_18-43-36.jpg" data-ngthumb="photo_2023-08-17_18-43-36.jpg" data-ngdesc=""
+          >Berlin 3</a
+        >
+      </div>
     </main>
-    <footer>
-        &copy; 2022 Museum Mobile. All rights reserved.
-    </footer>
-</body>
+    <footer>&copy; 2022 Museum Mobile. All rights reserved.</footer>
+  </body>
 </html>
