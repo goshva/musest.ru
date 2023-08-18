@@ -12,7 +12,12 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script
       type="text/javascript"
@@ -27,7 +32,7 @@
     </header>
     <nav>
       <a type="button" class="lead btn btn-dark" href="#">9:00-21:00</a>
-      <a type="button" class="lead btn btn-light" href="/">?</a>
+      <a type="button" class="btn btn-light" href="#aside">📌 Карта</a>
       <a class="lead btn btn-success" href="#">Купить билет</a>
       <!--<a type="button" class="btn btn-secondary" href="#">О нас</a>
       <a type="button" class="btn btn-info" href="#">Контакты</a>
@@ -323,22 +328,59 @@
         >
       </div>
     </main>
-    <footer>&copy; 2023 Musest.ru </footer>
-    <script src="js/main.js"></script><!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();
-       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
-       ym(94668177, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-       });
+    <aside id="aside">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae8ee8433ce54aa76fdfd1496f46914c737d8952e78fddb159e0e6678166a2cb0&amp;width=100%25&amp;height=800&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
+    </aside>
+    <footer>
+      ℹ️ <a type="button" class="lead btn btn-light" href="">Задать вопрос</a>
+    </footer>
+    <script src="js/main.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(94668177, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/94668177" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/94668177"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
     <!-- /Yandex.Metrika counter -->
   </body>
 </html>
