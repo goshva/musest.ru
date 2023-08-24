@@ -1,394 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
-    ></script>
-    <title>Музей на перекрёстке</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Музей <a type="button" class="btn btn-dark" href="/about.html">9:00-21:00</a></h1>
-    </header>
-    <nav>
-      
-      <a type="button" class="btn btn-light" href="#aside">📌 Карта</a>
-      <a class="lead btn btn-success" href="#">Купить билет</a>
-      <!--<a type="button" class="btn btn-secondary" href="#">О нас</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+  <title>Музей на перекрёстке</title>
+</head>
+
+<body>
+  <header>
+    <h1>Музей <a type="button" class="btn btn-dark" href="/about.html">9:00-21:00</a></h1>
+  </header>
+  <nav>
+
+    <a type="button" class="btn btn-light" href="#aside">📌 Карта</a>
+    <a class="lead btn btn-success" href="#">Купить билет</a>
+    <!--<a type="button" class="btn btn-secondary" href="#">О нас</a>
       <a type="button" class="btn btn-info" href="#">Контакты</a>
       -->
-    </nav>
-    <main>
-      <div
-        id="ngy2p"
-        data-nanogallery2='{
-            "itemsBaseURL": "/img/",
-            "thumbnailWidth": "100%",
-            "thumbnailHeight": "133",
-            "thumbnailLabel": {
-              "position": "overImageOnBottom"
-            },
-            "thumbnailAlignment": "center",
-            "thumbnailOpenImage": true
-          }'
-      >
-        <a href="ship-1.jpg" data-ngthumb="sship-1.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-2.jpg" data-ngthumb="sship-2.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-3.jpg" data-ngthumb="sship-3.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-4.jpg" data-ngthumb="sship-4.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-5.jpg" data-ngthumb="sship-5.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-6.jpg" data-ngthumb="sship-6.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-7.jpg" data-ngthumb="sship-7.jpg" data-ngdesc=""
-          >"инж.Попов"</a
-        >
-        <a href="ship-8.jpg" data-ngthumb="sship-8.jpg" data-ngdesc=""
-          >Императрица</a
-        >
-        <a href="ship-9.jpg" data-ngthumb="sship-9.jpg" data-ngdesc=""
-          >Императрица</a
-        >
-        <a href="ship-10.jpg" data-ngthumb="sship-10.jpg" data-ngdesc=""
-          >Тихая мери</a
-        >
-        <a href="ship-11.jpg" data-ngthumb="sship-11.jpg" data-ngdesc=""
-          >Тихая мери</a
-        >
-        <a href="ship-12.jpg" data-ngthumb="sship-12.jpg" data-ngdesc=""
-          >Тихая мери</a
-        >
-        <a href="ship-13.jpg" data-ngthumb="sship-13.jpg" data-ngdesc=""
-          >Тихая мери</a
-        >
-        <a href="ship-14.jpg" data-ngthumb="sship-14.jpg" data-ngdesc=""
-          >Тихая мери</a
-        >
-        <a href="ship-15.jpg" data-ngthumb="sship-15.jpg" data-ngdesc=""
-          >Pirate junk</a
-        >
-        <a href="ship-16.jpg" data-ngthumb="sship-16.jpg" data-ngdesc=""
-          >Pirate junk</a
-        >
-        <a href="ship-17.jpg" data-ngthumb="sship-17.jpg" data-ngdesc=""
-          >Наутилус</a
-        >
-        <a href="ship-18.jpg" data-ngthumb="sship-18.jpg" data-ngdesc=""
-          >Наутилус</a
-        >
-        <a href="ship-19.jpg" data-ngthumb="sship-19.jpg" data-ngdesc=""
-          >Наутилус</a
-        >
-        <a href="ship-20.jpg" data-ngthumb="sship-20.jpg" data-ngdesc=""
-          >Jackdaw</a
-        >
-        <a href="ship-21.jpg" data-ngthumb="sship-21.jpg" data-ngdesc=""
-          >Jackdaw</a
-        >
-        <a href="ship-22.jpg" data-ngthumb="sship-22.jpg" data-ngdesc=""
-          >Алые паруса</a
-        >
-        <a href="ship-23.jpg" data-ngthumb="sship-23.jpg" data-ngdesc=""
-          >Алые паруса</a
-        >
-        <a href="ship-24.jpg" data-ngthumb="sship-24.jpg" data-ngdesc=""
-          >Алые паруса</a
-        >
-        <a href="ship-25.jpg" data-ngthumb="sship-25.jpg" data-ngdesc=""
-          >Копенгаген</a
-        >
-        <a href="ship-26.jpg" data-ngthumb="sship-26.jpg" data-ngdesc=""
-          >Копенгаген</a
-        >
-        <a href="ship-27.jpg" data-ngthumb="sship-27.jpg" data-ngdesc=""
-          >Копенгаген</a
-        >
-        <a href="ship-28.jpg" data-ngthumb="sship-28.jpg" data-ngdesc=""
-          >Морское дно</a
-        >
-        <a href="ship-29.jpg" data-ngthumb="sship-29.jpg" data-ngdesc=""
-          >Морское дно</a
-        >
-        <a href="ship-30.jpg" data-ngthumb="sship-30.jpg" data-ngdesc=""
-          >Морское дно</a
-        >
-        <a href="ship-31.jpg" data-ngthumb="sship-31.jpg" data-ngdesc=""
-          >Темрюк</a
-        >
-        <a href="ship-32.jpg" data-ngthumb="sship-32.jpg" data-ngdesc=""
-          >Темрюк</a
-        >
-        <a href="ship-33.jpg" data-ngthumb="sship-33.jpg" data-ngdesc=""
-          >Темрюк</a
-        >
-        <a href="ship-34.jpg" data-ngthumb="sship-34.jpg" data-ngdesc=""
-          >Victoria</a
-        >
-        <a href="ship-35.jpg" data-ngthumb="sship-35.jpg" data-ngdesc=""
-          >Victoria</a
-        >
-        <a href="ship-36.jpg" data-ngthumb="sship-36.jpg" data-ngdesc=""
-          >Victoria</a
-        >
-        <a href="ship-37.jpg" data-ngthumb="sship-37.jpg" data-ngdesc=""
-          >Victoria</a
-        >
-        <a href="ship-38.jpg" data-ngthumb="sship-38.jpg" data-ngdesc=""
-          >Летучий голандец</a
-        >
-        <a href="ship-39.jpg" data-ngthumb="sship-39.jpg" data-ngdesc=""
-          >Летучий голандец</a
-        >
-        <a href="ship-40.jpg" data-ngthumb="sship-40.jpg" data-ngdesc=""
-          >Летучий голандец</a
-        >
-        <a href="ship-41.jpg" data-ngthumb="sship-41.jpg" data-ngdesc=""
-          >Арабелла</a
-        >
-        <a href="ship-42.jpg" data-ngthumb="sship-42.jpg" data-ngdesc=""
-          >Волна</a
-        >
-        <a href="ship-43.jpg" data-ngthumb="sship-43.jpg" data-ngdesc=""
-          >Волна</a
-        >
-        <a href="ship-44.jpg" data-ngthumb="sship-44.jpg" data-ngdesc=""
-          >Волна</a
-        >
-        <a href="ship-45.jpg" data-ngthumb="sship-45.jpg" data-ngdesc=""
-          >Волна</a
-        >
-        <a href="ship-46.jpg" data-ngthumb="sship-46.jpg" data-ngdesc=""
-          >Волна</a
-        >
-        <a href="ship-47.jpg" data-ngthumb="sship-47.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-48.jpg" data-ngthumb="sship-48.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-49.jpg" data-ngthumb="sship-49.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-50.jpg" data-ngthumb="sship-50.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-51.jpg" data-ngthumb="sship-51.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-52.jpg" data-ngthumb="sship-52.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-53.jpg" data-ngthumb="sship-53.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-54.jpg" data-ngthumb="sship-54.jpg" data-ngdesc=""
-          >Кин-дза-дза</a
-        >
-        <a href="ship-55.jpg" data-ngthumb="sship-55.jpg" data-ngdesc=""
-          >Восток</a
-        >
-        <a href="ship-56.jpg" data-ngthumb="sship-56.jpg" data-ngdesc=""
-          >Восток</a
-        >
-        <a href="ship-57.jpg" data-ngthumb="sship-57.jpg" data-ngdesc=""
-          >Revenge</a
-        >
-        <a href="ship-58.jpg" data-ngthumb="sship-58.jpg" data-ngdesc=""
-          >Revenge</a
-        >
-        <a href="ship-59.jpg" data-ngthumb="sship-59.jpg" data-ngdesc=""
-          >Revenge</a
-        >
-        <a href="ship-60.jpg" data-ngthumb="sship-60.jpg" data-ngdesc=""
-          >Джонка 🇯🇵</a
-        >
-        <a href="ship-61.jpg" data-ngthumb="sship-61.jpg" data-ngdesc=""
-          >Джонка 🇯🇵</a
-        >
-        <a href="ship-62.jpg" data-ngthumb="sship-62.jpg" data-ngdesc=""
-          >Джонка 🇯🇵</a
-        >
-        <a href="ship-63.jpg" data-ngthumb="sship-63.jpg" data-ngdesc=""
-          >Джонка 🇯🇵</a
-        >
-        <a href="ship-64.jpg" data-ngthumb="sship-64.jpg" data-ngdesc=""
-          >Mary Celestia</a
-        >
-        <a href="ship-65.jpg" data-ngthumb="sship-65.jpg" data-ngdesc=""
-          >Mary Celestia</a
-        >
-        <a href="ship-66.jpg" data-ngthumb="sship-66.jpg" data-ngdesc=""
-          >Mary Celestia</a
-        >
-        <a href="ship-67.jpg" data-ngthumb="sship-67.jpg" data-ngdesc=""
-          >Mary Celestia</a
-        >
-        <a href="ship-68.jpg" data-ngthumb="sship-68.jpg" data-ngdesc=""
-          >Titan quest</a
-        >
-        <a href="ship-69.jpg" data-ngthumb="sship-69.jpg" data-ngdesc=""
-          >Titan quest</a
-        >
-        <a href="ship-70.jpg" data-ngthumb="sship-70.jpg" data-ngdesc=""
-          >Чесменский бой</a
-        >
-        <a href="ship-71.jpg" data-ngthumb="sship-71.jpg" data-ngdesc=""
-          >Чесменский бой</a
-        >
-        <a href="ship-72.jpg" data-ngthumb="sship-72.jpg" data-ngdesc=""
-          >Чесменский бой</a
-        >
-        <a href="ship-73.jpg" data-ngthumb="sship-73.jpg" data-ngdesc=""
-          >Водный мир</a
-        >
-        <a href="ship-74.jpg" data-ngthumb="sship-74.jpg" data-ngdesc=""
-          >Водный мир</a
-        >
-        <a href="ship-75.jpg" data-ngthumb="sship-75.jpg" data-ngdesc=""
-          >Водный мир</a
-        >
-        <a href="ship-76.jpg" data-ngthumb="sship-76.jpg" data-ngdesc=""
-          >Водный мир</a
-        >
-        <a href="ship-77.jpg" data-ngthumb="sship-77.jpg" data-ngdesc=""
-          >Wasa</a
-        >
-        <a href="ship-78.jpg" data-ngthumb="sship-78.jpg" data-ngdesc=""
-          >Wasa</a
-        >
-        <a href="ship-79.jpg" data-ngthumb="sship-79.jpg" data-ngdesc=""
-          >Wasa</a
-        >
-        <a href="ship-80.jpg" data-ngthumb="sship-80.jpg" data-ngdesc=""
-          >Принципидиум</a
-        >
-        <a href="ship-81.jpg" data-ngthumb="sship-81.jpg" data-ngdesc=""
-          >Летучий голандец</a
-        >
-        <a href="ship-82.jpg" data-ngthumb="sship-82.jpg" data-ngdesc=""
-          >Divitity2</a
-        >
-        <a href="ship-83.jpg" data-ngthumb="sship-83.jpg" data-ngdesc=""
-          >Morrowind</a
-        >
-        <a href="ship-84.jpg" data-ngthumb="sship-84.jpg" data-ngdesc=""
-          >Diablo2</a
-        >
-        <a href="ship-85.jpg" data-ngthumb="sship-85.jpg" data-ngdesc=""
-          >Diablo2</a
-        >
-        <a href="ship-86.jpg" data-ngthumb="sship-86.jpg" data-ngdesc=""
-          >Кон-тики</a
-        >
-        <a href="ship-87.jpg" data-ngthumb="sship-87.jpg" data-ngdesc=""
-          >Антара</a
-        >
-        <a href="ship-88.jpg" data-ngthumb="sship-88.jpg" data-ngdesc=""
-          >Кузнецов</a
-        >
-        <a href="ship-89.jpg" data-ngthumb="sship-89.jpg" data-ngdesc=""
-          >Кузнецов</a
-        >
-        <a href="ship-90.jpg" data-ngthumb="sship-90.jpg" data-ngdesc=""
-          >Сан-Раффаель</a
-        >
-        <a href="ship-91.jpg" data-ngthumb="sship-91.jpg" data-ngdesc=""
-          >Сан-Раффаель</a
-        >
-        
-      </div>
-    </main>
-    <aside id="aside">
-      <script
-        type="text/javascript"
-        charset="utf-8"
-        async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae8ee8433ce54aa76fdfd1496f46914c737d8952e78fddb159e0e6678166a2cb0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
-      ></script>
-    </aside>
-    <footer>
-      ℹ️ <a type="button" class="lead btn btn-light" href="">Задать вопрос</a>
-     ☎️<a type="button" class="lead btn btn-light" href="tel:+79620009922">8(962)000-99-22</a>
-      
-    </footer>
-    <script src="js/main.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+  </nav>
+  <main>
+    <div id="ngy2p" data-nanogallery2='{
+          "itemsBaseURL": "/img/",
+          "thumbnailWidth":  "200",
+          "thumbnailHeight":  "133",
+          "thumbnailBorderVertical": 1,
+          "thumbnailBorderHorizontal": 1,
+          "thumbnailDisplayTransition": "slideUp2",
+          "thumbnailLabel": {
+            "position": "overImageOnTop"
+          },
+          "thumbnailDisplayTransition": "slideLeft",
+          "thumbnailAlignment": "center",
+          "thumbnailOpenImage": true
+          }'>
+      <a href="ship-1.jpg" data-ngthumb="sship-1.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-2.jpg" data-ngthumb="sship-2.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-3.jpg" data-ngthumb="sship-3.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-4.jpg" data-ngthumb="sship-4.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-5.jpg" data-ngthumb="sship-5.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-6.jpg" data-ngthumb="sship-6.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-7.jpg" data-ngthumb="sship-7.jpg" class="ship" loading="lazy" data-ngdesc="">"инж.Попов"</a>
+      <a href="ship-8.jpg" data-ngthumb="sship-8.jpg" class="ship" loading="lazy" data-ngdesc="">Императрица</a>
+      <a href="ship-9.jpg" data-ngthumb="sship-9.jpg" class="ship" loading="lazy" data-ngdesc="">Императрица</a>
+      <a href="ship-10.jpg" data-ngthumb="sship-10.jpg" class="ship" loading="lazy" data-ngdesc="">Тихая мери</a>
+      <a href="ship-11.jpg" data-ngthumb="sship-11.jpg" class="ship" loading="lazy" data-ngdesc="">Тихая мери</a>
+      <a href="ship-12.jpg" data-ngthumb="sship-12.jpg" class="ship" loading="lazy" data-ngdesc="">Тихая мери</a>
+      <a href="ship-13.jpg" data-ngthumb="sship-13.jpg" class="ship" loading="lazy" data-ngdesc="">Тихая мери</a>
+      <a href="ship-14.jpg" data-ngthumb="sship-14.jpg" class="ship" loading="lazy" data-ngdesc="">Тихая мери</a>
+      <a href="ship-15.jpg" data-ngthumb="sship-15.jpg" class="ship" loading="lazy" data-ngdesc="">Pirate junk</a>
+      <a href="ship-16.jpg" data-ngthumb="sship-16.jpg" class="ship" loading="lazy" data-ngdesc="">Pirate junk</a>
+      <a href="ship-17.jpg" data-ngthumb="sship-17.jpg" class="ship" loading="lazy" data-ngdesc="">Наутилус</a>
+      <a href="ship-18.jpg" data-ngthumb="sship-18.jpg" class="ship" loading="lazy" data-ngdesc="">Наутилус</a>
+      <a href="ship-19.jpg" data-ngthumb="sship-19.jpg" class="ship" loading="lazy" data-ngdesc="">Наутилус</a>
+      <a href="ship-20.jpg" data-ngthumb="sship-20.jpg" class="ship" loading="lazy" data-ngdesc="">Jackdaw</a>
+      <a href="ship-21.jpg" data-ngthumb="sship-21.jpg" class="ship" loading="lazy" data-ngdesc="">Jackdaw</a>
+      <a href="ship-22.jpg" data-ngthumb="sship-22.jpg" class="ship" loading="lazy" data-ngdesc="">Алые паруса</a>
+      <a href="ship-23.jpg" data-ngthumb="sship-23.jpg" class="ship" loading="lazy" data-ngdesc="">Алые паруса</a>
+      <a href="ship-24.jpg" data-ngthumb="sship-24.jpg" class="ship" loading="lazy" data-ngdesc="">Алые паруса</a>
+      <a href="ship-25.jpg" data-ngthumb="sship-25.jpg" class="ship" loading="lazy" data-ngdesc="">Копенгаген</a>
+      <a href="ship-26.jpg" data-ngthumb="sship-26.jpg" class="ship" loading="lazy" data-ngdesc="">Копенгаген</a>
+      <a href="ship-27.jpg" data-ngthumb="sship-27.jpg" class="ship" loading="lazy" data-ngdesc="">Копенгаген</a>
+      <a href="ship-28.jpg" data-ngthumb="sship-28.jpg" class="ship" loading="lazy" data-ngdesc="">Морское дно</a>
+      <a href="ship-29.jpg" data-ngthumb="sship-29.jpg" class="ship" loading="lazy" data-ngdesc="">Морское дно</a>
+      <a href="ship-30.jpg" data-ngthumb="sship-30.jpg" class="ship" loading="lazy" data-ngdesc="">Морское дно</a>
+      <a href="ship-31.jpg" data-ngthumb="sship-31.jpg" class="ship" loading="lazy" data-ngdesc="">Темрюк</a>
+      <a href="ship-32.jpg" data-ngthumb="sship-32.jpg" class="ship" loading="lazy" data-ngdesc="">Темрюк</a>
+      <a href="ship-33.jpg" data-ngthumb="sship-33.jpg" class="ship" loading="lazy" data-ngdesc="">Темрюк</a>
+      <a href="ship-34.jpg" data-ngthumb="sship-34.jpg" class="ship" loading="lazy" data-ngdesc="">Victoria</a>
+      <a href="ship-35.jpg" data-ngthumb="sship-35.jpg" class="ship" loading="lazy" data-ngdesc="">Victoria</a>
+      <a href="ship-36.jpg" data-ngthumb="sship-36.jpg" class="ship" loading="lazy" data-ngdesc="">Victoria</a>
+      <a href="ship-37.jpg" data-ngthumb="sship-37.jpg" class="ship" loading="lazy" data-ngdesc="">Victoria</a>
+      <a href="ship-38.jpg" data-ngthumb="sship-38.jpg" class="ship" loading="lazy" data-ngdesc="">Летучий голандец</a>
+      <a href="ship-39.jpg" data-ngthumb="sship-39.jpg" class="ship" loading="lazy" data-ngdesc="">Летучий голандец</a>
+      <a href="ship-40.jpg" data-ngthumb="sship-40.jpg" class="ship" loading="lazy" data-ngdesc="">Летучий голандец</a>
+      <a href="ship-41.jpg" data-ngthumb="sship-41.jpg" class="ship" loading="lazy" data-ngdesc="">Арабелла</a>
+      <a href="ship-42.jpg" data-ngthumb="sship-42.jpg" class="ship" loading="lazy" data-ngdesc="">Волна</a>
+      <a href="ship-43.jpg" data-ngthumb="sship-43.jpg" class="ship" loading="lazy" data-ngdesc="">Волна</a>
+      <a href="ship-44.jpg" data-ngthumb="sship-44.jpg" class="ship" loading="lazy" data-ngdesc="">Волна</a>
+      <a href="ship-45.jpg" data-ngthumb="sship-45.jpg" class="ship" loading="lazy" data-ngdesc="">Волна</a>
+      <a href="ship-46.jpg" data-ngthumb="sship-46.jpg" class="ship" loading="lazy" data-ngdesc="">Волна</a>
+      <a href="ship-47.jpg" data-ngthumb="sship-47.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-48.jpg" data-ngthumb="sship-48.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-49.jpg" data-ngthumb="sship-49.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-50.jpg" data-ngthumb="sship-50.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-51.jpg" data-ngthumb="sship-51.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-52.jpg" data-ngthumb="sship-52.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-53.jpg" data-ngthumb="sship-53.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-54.jpg" data-ngthumb="sship-54.jpg" class="ship" loading="lazy" data-ngdesc="">Кин-дза-дза</a>
+      <a href="ship-55.jpg" data-ngthumb="sship-55.jpg" class="ship" loading="lazy" data-ngdesc="">Восток</a>
+      <a href="ship-56.jpg" data-ngthumb="sship-56.jpg" class="ship" loading="lazy" data-ngdesc="">Восток</a>
+      <a href="ship-57.jpg" data-ngthumb="sship-57.jpg" class="ship" loading="lazy" data-ngdesc="">Revenge</a>
+      <a href="ship-58.jpg" data-ngthumb="sship-58.jpg" class="ship" loading="lazy" data-ngdesc="">Revenge</a>
+      <a href="ship-59.jpg" data-ngthumb="sship-59.jpg" class="ship" loading="lazy" data-ngdesc="">Revenge</a>
+      <a href="ship-60.jpg" data-ngthumb="sship-60.jpg" class="ship" loading="lazy" data-ngdesc="">Джонка 🇯🇵</a>
+      <a href="ship-61.jpg" data-ngthumb="sship-61.jpg" class="ship" loading="lazy" data-ngdesc="">Джонка 🇯🇵</a>
+      <a href="ship-62.jpg" data-ngthumb="sship-62.jpg" class="ship" loading="lazy" data-ngdesc="">Джонка 🇯🇵</a>
+      <a href="ship-63.jpg" data-ngthumb="sship-63.jpg" class="ship" loading="lazy" data-ngdesc="">Джонка 🇯🇵</a>
+      <a href="ship-64.jpg" data-ngthumb="sship-64.jpg" class="ship" loading="lazy" data-ngdesc="">Mary Celestia</a>
+      <a href="ship-65.jpg" data-ngthumb="sship-65.jpg" class="ship" loading="lazy" data-ngdesc="">Mary Celestia</a>
+      <a href="ship-66.jpg" data-ngthumb="sship-66.jpg" class="ship" loading="lazy" data-ngdesc="">Mary Celestia</a>
+      <a href="ship-67.jpg" data-ngthumb="sship-67.jpg" class="ship" loading="lazy" data-ngdesc="">Mary Celestia</a>
+      <a href="ship-68.jpg" data-ngthumb="sship-68.jpg" class="ship" loading="lazy" data-ngdesc="">Titan quest</a>
+      <a href="ship-69.jpg" data-ngthumb="sship-69.jpg" class="ship" loading="lazy" data-ngdesc="">Titan quest</a>
+      <a href="ship-70.jpg" data-ngthumb="sship-70.jpg" class="ship" loading="lazy" data-ngdesc="">Чесменский бой</a>
+      <a href="ship-71.jpg" data-ngthumb="sship-71.jpg" class="ship" loading="lazy" data-ngdesc="">Чесменский бой</a>
+      <a href="ship-72.jpg" data-ngthumb="sship-72.jpg" class="ship" loading="lazy" data-ngdesc="">Чесменский бой</a>
+      <a href="ship-73.jpg" data-ngthumb="sship-73.jpg" class="ship" loading="lazy" data-ngdesc="">Водный мир</a>
+      <a href="ship-74.jpg" data-ngthumb="sship-74.jpg" class="ship" loading="lazy" data-ngdesc="">Водный мир</a>
+      <a href="ship-75.jpg" data-ngthumb="sship-75.jpg" class="ship" loading="lazy" data-ngdesc="">Водный мир</a>
+      <a href="ship-76.jpg" data-ngthumb="sship-76.jpg" class="ship" loading="lazy" data-ngdesc="">Водный мир</a>
+      <a href="ship-77.jpg" data-ngthumb="sship-77.jpg" class="ship" loading="lazy" data-ngdesc="">Wasa</a>
+      <a href="ship-78.jpg" data-ngthumb="sship-78.jpg" class="ship" loading="lazy" data-ngdesc="">Wasa</a>
+      <a href="ship-79.jpg" data-ngthumb="sship-79.jpg" class="ship" loading="lazy" data-ngdesc="">Wasa</a>
+      <a href="ship-80.jpg" data-ngthumb="sship-80.jpg" class="ship" loading="lazy" data-ngdesc="">Принципидиум</a>
+      <a href="ship-81.jpg" data-ngthumb="sship-81.jpg" class="ship" loading="lazy" data-ngdesc="">Летучий голандец</a>
+      <a href="ship-82.jpg" data-ngthumb="sship-82.jpg" class="ship" loading="lazy" data-ngdesc="">Divitity2</a>
+      <a href="ship-83.jpg" data-ngthumb="sship-83.jpg" class="ship" loading="lazy" data-ngdesc="">Morrowind</a>
+      <a href="ship-84.jpg" data-ngthumb="sship-84.jpg" class="ship" loading="lazy" data-ngdesc="">Diablo2</a>
+      <a href="ship-85.jpg" data-ngthumb="sship-85.jpg" class="ship" loading="lazy" data-ngdesc="">Diablo2</a>
+      <a href="ship-86.jpg" data-ngthumb="sship-86.jpg" class="ship" loading="lazy" data-ngdesc="">Кон-тики</a>
+      <a href="ship-87.jpg" data-ngthumb="sship-87.jpg" class="ship" loading="lazy" data-ngdesc="">Антара</a>
+      <a href="ship-88.jpg" data-ngthumb="sship-88.jpg" class="ship" loading="lazy" data-ngdesc="">Кузнецов</a>
+      <a href="ship-89.jpg" data-ngthumb="sship-89.jpg" class="ship" loading="lazy" data-ngdesc="">Кузнецов</a>
+      <a href="ship-90.jpg" data-ngthumb="sship-90.jpg" class="ship" loading="lazy" data-ngdesc="">Сан-Раффаель</a>
+      <a href="ship-91.jpg" data-ngthumb="sship-91.jpg" class="ship" loading="lazy" data-ngdesc="">Сан-Раффаель</a>
 
-      ym(94668177, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/94668177"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-  </body>
+    </div>
+  </main>
+  <aside id="aside">
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae8ee8433ce54aa76fdfd1496f46914c737d8952e78fddb159e0e6678166a2cb0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+  </aside>
+  <footer>
+    ℹ️ <a type="button" class="lead btn btn-light" href="">Задать вопрос</a>
+    ☎️<a type="button" class="lead btn btn-light" href="tel:+79620009922">8(962)000-99-22</a>
+
+  </footer>
+  <script src="js/main.js"></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(
+      window,
+      document,
+      "script",
+      "https://mc.yandex.ru/metrika/tag.js",
+      "ym"
+    );
+
+    ym(94668177, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/94668177" style="position: absolute; left: -9999px" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+
 </html>
