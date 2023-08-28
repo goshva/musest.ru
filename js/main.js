@@ -18,7 +18,7 @@ function feedback(action, status) {
       })
       .then((data) => {
         alert(
-          `Благодарим за  заказ «${action}».\nСейчас ответственный свяжется с вами`
+          `Благодарим, стоимость билета 500р «${action}».\nСейчас оплата запустится`
         );
         window.location.href = "/#menu";
       });
