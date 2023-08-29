@@ -9,6 +9,9 @@
     type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
@@ -19,11 +22,20 @@
 
 <body>
   <header>
-    <h1><a class="btn btn-dark btn-lg" href="/">Музей </a>
-
+    <h1><a class="btn btn-dark btn-lg" href="/">Музей </a> 
       <a type="button" class="btn btn-success" href="/about.html">Маршрут </a>
       <a type="button" class="btn btn-primary" href="/shop.html">Магазин</a>
-      <a type="button" class="btn btn-info" href="/Nautilus.html">Наутилус</a>
+      <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      Историй
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item"  href="/Nautilus.html">Наутилус</a></li>
+      <li><a class="dropdown-item" href="#">Другое действие</a></li>
+      <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+    </ul>
+
     </h1>
   </header>
   <nav>
@@ -32,7 +44,7 @@
     <a type="button" class="btn btn-dark btn-lg" href="#">9:00-21:00</a>
     <a class="lead btn btn-success" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79283468468">Купить
       билет</a>
-    
+
     <!--<a type="button" class="btn btn-secondary" href="#">О нас</a>
       <a type="button" class="btn btn-info" href="#">Контакты</a>
       -->
@@ -48,41 +60,41 @@
           </figure>
         </div>
         <div class="col-sm">
-          <figure class="figure"> 
+          <figure class="figure">
             <img src="/img/ship-18.jpg" class="figure-img img-fluid rounded" alt="тут описание">
             <figcaption class="figure-caption"></figcaption>
           </figure>
-        
+
         </div>
         <div class="col-sm">
-        
+
           <figure class="figure">
             <img src="/img/ship-19.jpg" class="figure-img img-fluid rounded" alt="тут описание">
             <figcaption class="figure-caption"></figcaption>
           </figure>
-        
+
         </div>
       </div>
     </div>
     <p> Ребенок обычно ощущает массу положительных эмоций при посещении музея с пиратами и кораблями. Вот несколько
-    возможных положительных впечатлений, которые могут возникнуть у него:</p>
+      возможных положительных впечатлений, которые могут возникнуть у него:</p>
 
-    <p>"Судно Наутилус - это подводная лодка, которая была построена в начале 20 века для исследования морских глубин. 
+    <p>"Судно Наутилус - это подводная лодка, которая была построена в начале 20 века для исследования морских глубин.
       Она имеет форму цилиндра и оснащена двигателем, который позволяет ей двигаться под водой со скоростью до 10 узлов.
 
-      <p>На борту Наутилуса есть несколько кают для экипажа и пассажиров, а также лаборатория для проведения научных исследований.
-       Одной из главных достопримечательностей Наутилуса является его капсула, в которой экипаж может находиться под водой в течение нескольких дней.</p>
-      
-      Наутилус был использован для многих научных экспедиций и исследований, включая изучение морского дна и жизни его обитателей.
-      <p>Сегодня он является музеем и доступен для посещения всем желающим."</p>
-  
-    
+    <p>На борту Наутилуса есть несколько кают для экипажа и пассажиров, а также лаборатория для проведения научных
+      исследований.
+      Одной из главных достопримечательностей Наутилуса является его капсула, в которой экипаж может находиться под
+      водой в течение нескольких дней.</p>
+
+    Наутилус был использован для многих научных экспедиций и исследований, включая изучение морского дна и жизни его
+    обитателей.</p>
+
+
+
     </div>
   </main>
-  <aside id="aside">
-    <script type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae8ee8433ce54aa76fdfd1496f46914c737d8952e78fddb159e0e6678166a2cb0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-  </aside>
+
   <footer>
     ℹ️ <a type="button" class="lead btn btn-light" href="">Задать вопрос</a>
     ☎️<a type="button" class="lead btn btn-light" href="tel:+79620009922">8(962)000-99-22</a>
