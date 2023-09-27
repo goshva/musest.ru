@@ -26,6 +26,91 @@
     src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
   <title>Магазин</title>
 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кнопка вверх для сайта - Пример 01</title>
+    <style>
+      body {
+        min-height: 2000px;
+      }
+  
+      .btn-up {
+        z-index:10000;
+        position: fixed;
+        background-color: #673ab7;
+        right: 20px;
+        bottom: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 50px;
+      }
+  
+      .btn-up::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: transparent no-repeat center center;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+      }
+  
+      .btn-up_hide {
+        display: none;
+      }
+  
+      @media (hover: hover) and (pointer: fine) {
+        .btn-up:hover {
+          background-color: #512da8;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+    <div class="btn-up btn-up_hide"></div>
+  
+    <script>
+      const btnUp = {
+        el: document.querySelector('.btn-up'),
+        show() {
+          
+          this.el.classList.remove('btn-up_hide');
+        },
+        hide() {
+          
+          this.el.classList.add('btn-up_hide');
+        },
+        addEventListener() {
+          
+          window.addEventListener('scroll', () => {
+  
+            const scrollY = window.scrollY || document.documentElement.scrollTop;
+            
+            scrollY > 400 ? this.show() : this.hide();
+          });
+          
+          document.querySelector('.btn-up').onclick = () => {
+            
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }
+      btnUp.addEventListener();
+    </script>
+  </body>
+  
+  </html>
 
 </head>
 
@@ -47,6 +132,7 @@
         <li><a class="dropdown-item" href="Eng.Popov.html">"Инж.Попов"</a></li>
         <li><a class="dropdown-item" href="Flying-Golandets.html">Летучий Голандец</a></li>
         <li><a class="dropdown-item" href="Wasa.html">Wasa</a></li>
+        <li><a class="dropdown-item" href="Temriuk.html">Темрюк</a></li>
       </ul>
 
     </h1>
