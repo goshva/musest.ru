@@ -42,3 +42,8 @@ footer {
 .nGY2GThumbnailTitle {
     text-transform: capitalize;
 }
+.align-left {
+    position: fixed; 
+    left: 0;
+    margin-left: 11px;
+  }
